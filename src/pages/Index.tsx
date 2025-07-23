@@ -119,33 +119,33 @@ const Index = () => {
         <div className="relative z-10 pb-8">
           <div className="max-w-md mx-auto space-y-8">
             {/* Сбор гостей */}
-            <div className="flex flex-col items-center justify-center gap-2">
+            <div className="flex items-center gap-4">
               <img 
-                src="https://cdn.poehali.dev/files/0bff7c92-310e-4021-8dad-45ecc83f6779.png" 
+                src="/img/ed9d95ab-8ef6-4d2c-ae2e-f03fa4d7fa41.jpg" 
                 alt="Гости"
-                className="h-16 md:h-20 w-auto"
+                className="h-16 md:h-20 w-auto flex-shrink-0"
                 style={{
                   filter: 'brightness(0) saturate(100%) invert(92%) sepia(10%) saturate(372%) hue-rotate(9deg) brightness(103%) contrast(96%)',
                   opacity: 0.9
                 }}
               />
-              <p className="font-montserrat font-medium text-lg md:text-xl text-center" style={{ color: '#F5F5DC' }}>
+              <p className="font-montserrat font-medium text-lg md:text-xl" style={{ color: '#F5F5DC' }}>
                 15:30<br />сбор гостей
               </p>
             </div>
             
             {/* Праздничный банкет */}
-            <div className="flex flex-col items-center justify-center gap-2">
+            <div className="flex items-center gap-4">
               <img 
                 src="https://cdn.poehali.dev/files/1846b001-6a1d-4e98-80b8-817746876187.png" 
                 alt="Банкет"
-                className="h-16 md:h-20 w-auto"
+                className="h-16 md:h-20 w-auto flex-shrink-0"
                 style={{
                   filter: 'brightness(0) saturate(100%) invert(92%) sepia(10%) saturate(372%) hue-rotate(9deg) brightness(103%) contrast(96%)',
                   opacity: 0.9
                 }}
               />
-              <p className="font-montserrat font-medium text-lg md:text-xl text-center" style={{ color: '#F5F5DC' }}>
+              <p className="font-montserrat font-medium text-lg md:text-xl" style={{ color: '#F5F5DC' }}>
                 16:00<br />Праздничный банкет
               </p>
             </div>
