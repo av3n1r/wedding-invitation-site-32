@@ -121,11 +121,11 @@ const Index = () => {
             {/* Сбор гостей */}
             <div className="flex items-center gap-4">
               <img 
-                src="/img/ed9d95ab-8ef6-4d2c-ae2e-f03fa4d7fa41.jpg" 
+                src="/img/d8aa2a37-9975-47c1-bff0-2578e01b4ff4.jpg" 
                 alt="Гости"
                 className="h-16 md:h-20 w-auto flex-shrink-0"
                 style={{
-                  filter: 'brightness(0) saturate(100%) invert(92%) sepia(10%) saturate(372%) hue-rotate(9deg) brightness(103%) contrast(96%)',
+                  filter: 'invert(92%) sepia(10%) saturate(372%) hue-rotate(9deg) brightness(103%) contrast(96%)',
                   opacity: 0.9
                 }}
               />
