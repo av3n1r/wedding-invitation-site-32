@@ -117,11 +117,11 @@ const Index = () => {
 
         {/* Временная шкала */}
         <div className="relative z-10 pb-8">
-          <div className="max-w-md mx-auto space-y-6">
+          <div className="max-w-md mx-auto space-y-8">
             {/* Сбор гостей */}
-            <div className="flex items-center justify-center gap-4">
+            <div className="flex flex-col items-center justify-center gap-2">
               <img 
-                src="https://cdn.poehali.dev/files/e6159b5b-8918-4958-aefd-103320975ac1.png" 
+                src="https://cdn.poehali.dev/files/0bff7c92-310e-4021-8dad-45ecc83f6779.png" 
                 alt="Гости"
                 className="h-16 md:h-20 w-auto"
                 style={{
@@ -129,13 +129,13 @@ const Index = () => {
                   opacity: 0.9
                 }}
               />
-              <p className="font-montserrat font-medium text-lg md:text-xl" style={{ color: '#F5F5DC' }}>
-                15:30 сбор гостей
+              <p className="font-montserrat font-medium text-lg md:text-xl text-center" style={{ color: '#F5F5DC' }}>
+                15:30<br />сбор гостей
               </p>
             </div>
             
             {/* Праздничный банкет */}
-            <div className="flex items-center justify-center gap-4">
+            <div className="flex flex-col items-center justify-center gap-2">
               <img 
                 src="https://cdn.poehali.dev/files/1846b001-6a1d-4e98-80b8-817746876187.png" 
                 alt="Банкет"
@@ -145,8 +145,8 @@ const Index = () => {
                   opacity: 0.9
                 }}
               />
-              <p className="font-montserrat font-medium text-lg md:text-xl" style={{ color: '#F5F5DC' }}>
-                16:00 Праздничный банкет
+              <p className="font-montserrat font-medium text-lg md:text-xl text-center" style={{ color: '#F5F5DC' }}>
+                16:00<br />Праздничный банкет
               </p>
             </div>
           </div>
