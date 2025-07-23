@@ -62,33 +62,18 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Wedding emerald theme
-				emerald: {
-					50: '#f8f9fa',
-					100: '#f0fdf4',
-					200: '#dcfce7',
-					300: '#bbf7d0',
-					400: '#50c878',
-					500: '#2f5233',
-					600: '#22c55e',
-					700: '#15803d',
-					800: '#166534',
-					900: '#14532d'
-				},
-				gold: {
-					50: '#fffbeb',
-					100: '#ffd700',
-					200: '#fde68a',
-					300: '#fcd34d',
-					400: '#fbbf24',
-					500: '#f59e0b',
-					600: '#d97706',
-					700: '#b45309',
-					800: '#92400e',
-					900: '#78350f'
+				// Wedding custom theme
+				wedding: {
+					primary: '#F5F5DC', // Основной цвет текста (бежевый)
+					secondary: '#800000', // Дополнительный цвет (бордовый)
+					primaryDark: '#E5E5CC',
+					secondaryDark: '#660000',
+					primaryLight: '#FAFAFA',
+					secondaryLight: '#A00000'
 				}
 			},
 			fontFamily: {
+				'great-vibes': ['Great Vibes', 'cursive'],
 				cormorant: ['Cormorant', 'serif'],
 				montserrat: ['Montserrat', 'sans-serif']
 			},
