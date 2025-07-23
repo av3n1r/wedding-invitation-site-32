@@ -136,7 +136,15 @@ const Index = () => {
             
             {/* Праздничный банкет */}
             <div className="flex items-center justify-center gap-4">
-              <DiningIcon />
+              <img 
+                src="https://cdn.poehali.dev/files/1846b001-6a1d-4e98-80b8-817746876187.png" 
+                alt="Банкет"
+                className="h-16 md:h-20 w-auto"
+                style={{
+                  filter: 'brightness(0) saturate(100%) invert(92%) sepia(10%) saturate(372%) hue-rotate(9deg) brightness(103%) contrast(96%)',
+                  opacity: 0.9
+                }}
+              />
               <p className="font-montserrat font-medium text-lg md:text-xl" style={{ color: '#F5F5DC' }}>
                 16:00 Праздничный банкет
               </p>
