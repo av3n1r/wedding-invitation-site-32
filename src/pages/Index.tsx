@@ -94,9 +94,17 @@ const Index = () => {
             </h3>
           </div>
 
-          {/* Знак бесконечности как кольца */}
+          {/* Кольца */}
           <div className="mb-8">
-            <InfinityRings className="" />
+            <img 
+              src="https://cdn.poehali.dev/files/6fec6047-8057-4197-ab53-b106cab095d8.png" 
+              alt="Свадебные кольца"
+              className="h-16 md:h-20 w-auto inline-block"
+              style={{
+                filter: 'brightness(0) saturate(100%) invert(92%) sepia(10%) saturate(372%) hue-rotate(9deg) brightness(103%) contrast(96%)',
+                opacity: 0.9
+              }}
+            />
           </div>
 
           {/* Информация о месте */}
