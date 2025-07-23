@@ -121,7 +121,7 @@ const Index = () => {
             {/* Сбор гостей */}
             <div className="flex items-center gap-4">
               <img 
-                src="/img/d8aa2a37-9975-47c1-bff0-2578e01b4ff4.jpg" 
+                src="/img/db4a3780-4502-410b-9a65-f28d8046194f.jpg" 
                 alt="Гости"
                 className="h-16 md:h-20 w-auto flex-shrink-0"
                 style={{
