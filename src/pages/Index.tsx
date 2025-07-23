@@ -13,7 +13,7 @@ const Index = () => {
       <section 
         className="min-h-screen flex flex-col items-center justify-center relative bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/619e4bc8-9727-4052-bdf0-1b357ed30972.jpg)`
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/6e49ddaf-673e-4e20-8ac9-c21812bf0708.jpg)`
         }}
       >
         {/* Background overlay for better text readability */}
