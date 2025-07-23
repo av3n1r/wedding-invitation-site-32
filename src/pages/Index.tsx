@@ -117,30 +117,29 @@ const Index = () => {
 
         {/* Временная шкала */}
         <div className="relative z-10 pb-8">
-          <div className="max-w-md mx-auto">
-            {/* Вертикальная линия */}
-            <div className="relative ml-8">
-              <div className="absolute left-0 top-0 bottom-0 w-0.5" style={{ backgroundColor: '#800000' }}></div>
-              
-              {/* Сбор гостей */}
-              <div className="relative flex items-center mb-8 pl-12">
-                <div className="absolute -left-6 top-1/2 transform -translate-y-1/2">
-                  <PeopleIcon />
-                </div>
-                <div className="text-left">
-                  <p className="font-montserrat font-medium" style={{ color: '#F5F5DC' }}>15:30 сбор гостей</p>
-                </div>
-              </div>
-              
-              {/* Праздничный банкет */}
-              <div className="relative flex items-center pl-12">
-                <div className="absolute -left-6 top-1/2 transform -translate-y-1/2">
-                  <DiningIcon />
-                </div>
-                <div className="text-left">
-                  <p className="font-montserrat font-medium" style={{ color: '#F5F5DC' }}>16:00 Праздничный банкет</p>
-                </div>
-              </div>
+          <div className="max-w-md mx-auto space-y-6">
+            {/* Сбор гостей */}
+            <div className="flex items-center justify-center gap-4">
+              <img 
+                src="https://cdn.poehali.dev/files/e6159b5b-8918-4958-aefd-103320975ac1.png" 
+                alt="Гости"
+                className="h-16 md:h-20 w-auto"
+                style={{
+                  filter: 'brightness(0) saturate(100%) invert(92%) sepia(10%) saturate(372%) hue-rotate(9deg) brightness(103%) contrast(96%)',
+                  opacity: 0.9
+                }}
+              />
+              <p className="font-montserrat font-medium text-lg md:text-xl" style={{ color: '#F5F5DC' }}>
+                15:30 сбор гостей
+              </p>
+            </div>
+            
+            {/* Праздничный банкет */}
+            <div className="flex items-center justify-center gap-4">
+              <DiningIcon />
+              <p className="font-montserrat font-medium text-lg md:text-xl" style={{ color: '#F5F5DC' }}>
+                16:00 Праздничный банкет
+              </p>
             </div>
           </div>
         </div>
