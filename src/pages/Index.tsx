@@ -110,7 +110,7 @@ const Index = () => {
           backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/a9573cb9-aa9e-4204-9798-622d45274eb3.jpg)`
         }}
       >
-        <div className="flex-1 flex flex-col justify-center items-center text-center relative z-10 pt-16">
+        <div className="flex-1 flex flex-col justify-center items-center text-center relative z-10 pt-8">
           {/* А&Н */}
           <div className="mb-8">
             <h1 className="text-6xl md:text-8xl font-great-vibes" style={{ color: '#F5F5DC' }}>
