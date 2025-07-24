@@ -115,15 +115,21 @@ const Index = () => {
           {/* Wedding text */}
           <div className="mb-16">
             <p className="text-xl md:text-2xl font-great-vibes tracking-widest" style={{ color: '#F5F5DC', opacity: 0.8 }}>
-              wedding
+              Wedding
             </p>
           </div>
 
-          {/* Decorative rings icon */}
+          {/* Diamond ring icon */}
           <div className="mb-8">
-            <div className="inline-flex items-center justify-center w-16 h-16 rounded-full" style={{ backgroundColor: 'rgba(245, 245, 220, 0.1)' }}>
-              <span className="text-2xl">💍</span>
-            </div>
+            <img 
+              src="https://cdn.poehali.dev/files/aeb5a686-2ea0-46d6-bf3b-467f0586ca5a.png" 
+              alt="Обручальное кольцо"
+              className="h-16 md:h-20 w-auto inline-block"
+              style={{
+                filter: 'brightness(0) saturate(100%) invert(92%) sepia(10%) saturate(372%) hue-rotate(9deg) brightness(103%) contrast(96%)',
+                opacity: 0.9
+              }}
+            />
           </div>
           
           {/* Scroll indicator */}
