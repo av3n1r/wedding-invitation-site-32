@@ -166,7 +166,7 @@ const Index = () => {
             {/* Сбор гостей */}
             <div className="flex items-center gap-4">
               <img 
-                src="/img/f33b006d-67fd-4bf6-98b4-721f4bde34ed.jpg" 
+                src="https://cdn.poehali.dev/files/4792ad6e-c87e-4050-9efd-07aea9ef308c.png" 
                 alt="Гости"
                 className="h-16 md:h-20 w-auto flex-shrink-0"
                 style={{
