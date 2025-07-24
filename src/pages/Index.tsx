@@ -114,16 +114,9 @@ const Index = () => {
           backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/a9573cb9-aa9e-4204-9798-622d45274eb3.jpg)`
         }}
       >
-        <div className="flex-1 flex flex-col justify-center items-center text-center relative z-10 pt-8">
-          {/* А&Н */}
+        <div className="flex-1 flex flex-col items-center text-center relative z-10 pt-16">
+          {/* Персональное обращение - поднято выше */}
           <div className="mb-8">
-            <h1 className="text-6xl md:text-8xl font-alex-brush" style={{ color: '#F5F5DC' }}>
-              {names.name1.charAt(0)}&{names.name2.charAt(0)}
-            </h1>
-          </div>
-          
-          {/* Персональное обращение */}
-          <div className="mb-6">
             <h2 className="text-3xl md:text-4xl font-alex-brush" style={{ color: '#F5F5DC' }}>
               {greeting}
             </h2>
@@ -132,9 +125,16 @@ const Index = () => {
             </h2>
           </div>
           
+          {/* А&Н */}
+          <div className="mb-8">
+            <h1 className="text-6xl md:text-8xl font-alex-brush" style={{ color: '#F5F5DC' }}>
+              {names.name1.charAt(0)}&{names.name2.charAt(0)}
+            </h1>
+          </div>
+          
           {/* Основной текст приглашения */}
           <div className="mb-8 max-w-2xl">
-            <p className="text-lg md:text-xl font-alex-brush leading-relaxed" style={{ color: '#F5F5DC' }}>
+            <p className="text-xl md:text-2xl font-alex-brush leading-relaxed" style={{ color: '#F5F5DC' }}>
               Приглашаем отпраздновать вместе с нами счастливый день нашей свадьбы
             </p>
           </div>
@@ -161,7 +161,7 @@ const Index = () => {
 
           {/* Информация о месте */}
           <div className="mb-12 max-w-3xl">
-            <p className="text-base md:text-lg font-alex-brush leading-relaxed text-center" style={{ color: '#F5F5DC' }}>
+            <p className="text-lg md:text-xl font-alex-brush leading-relaxed text-center" style={{ color: '#F5F5DC' }}>
               Торжество будет проходить в ресторане "Атлант" по адресу г. Ленинск-Кузнецкий, пос. Демьяновка, ул. Кемеровская 22а.
             </p>
           </div>
@@ -181,8 +181,8 @@ const Index = () => {
                   opacity: 0.9
                 }}
               />
-              <p className="font-alex-brush font-medium text-lg md:text-xl" style={{ color: '#F5F5DC' }}>
-                15:30<br />сбор гостей
+              <p className="font-alex-brush font-medium text-xl md:text-2xl" style={{ color: '#F5F5DC' }}>
+                15:30<br />Сбор гостей
               </p>
             </div>
             
@@ -197,7 +197,7 @@ const Index = () => {
                   opacity: 0.9
                 }}
               />
-              <p className="font-alex-brush font-medium text-lg md:text-xl" style={{ color: '#F5F5DC' }}>
+              <p className="font-alex-brush font-medium text-xl md:text-2xl" style={{ color: '#F5F5DC' }}>
                 16:00<br />Праздничный банкет
               </p>
             </div>
