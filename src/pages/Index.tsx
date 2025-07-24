@@ -1,7 +1,46 @@
 import Icon from '@/components/ui/icon';
 import { InfinityRings, PeopleIcon, DiningIcon } from '@/components/WeddingIcons';
+import { useState, useEffect } from 'react';
 
 const Index = () => {
+  const [names, setNames] = useState({
+    name1: 'Авенир',
+    name2: 'Наталья'
+  });
+  const [guestName, setGuestName] = useState('Александр');
+  const [isEditing, setIsEditing] = useState(false);
+
+  // URL параметры
+  const [greeting, setGreeting] = useState('Дорогой');
+  const [displayName, setDisplayName] = useState('Александр');
+
+  useEffect(() => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const pare = urlParams.get('pare');
+    const name1 = urlParams.get('name1');
+    const name2 = urlParams.get('name2');
+
+    // Обработка параметра pare для приветствия
+    if (pare === '1') {
+      setGreeting('Дорогие');
+    } else if (pare === '2') {
+      setGreeting('Дорогой');
+    } else if (pare === '3') {
+      setGreeting('Дорогая');
+    }
+
+    // Обработка имени гостя
+    if (name1) {
+      let finalName = decodeURIComponent(name1);
+      
+      if (name2 && name2 !== '0') {
+        finalName += ' и ' + decodeURIComponent(name2);
+      }
+      
+      setDisplayName(finalName);
+      setGuestName(finalName);
+    }
+  }, []);
   const scrollToInvitation = () => {
     document.getElementById('invitation')?.scrollIntoView({ 
       behavior: 'smooth' 
@@ -10,6 +49,47 @@ const Index = () => {
 
   return (
     <div className="min-h-screen">
+      {/* Edit Button */}
+      <button 
+        onClick={() => setIsEditing(!isEditing)}
+        className="fixed top-4 right-4 z-50 bg-black/20 hover:bg-black/30 text-white px-4 py-2 rounded-full transition-all"
+        style={{ backdropFilter: 'blur(10px)' }}
+      >
+        {isEditing ? 'Сохранить' : 'Редактировать'}
+      </button>
+
+      {/* Edit Panel */}
+      {isEditing && (
+        <div className="fixed top-16 right-4 z-50 bg-black/80 text-white p-4 rounded-lg space-y-3" style={{ backdropFilter: 'blur(10px)' }}>
+          <div>
+            <label className="block text-sm mb-1">Имя жениха:</label>
+            <input 
+              type="text" 
+              value={names.name1}
+              onChange={(e) => setNames({...names, name1: e.target.value})}
+              className="w-full px-2 py-1 bg-white/20 rounded border border-white/30 text-white placeholder-white/50"
+            />
+          </div>
+          <div>
+            <label className="block text-sm mb-1">Имя невесты:</label>
+            <input 
+              type="text" 
+              value={names.name2}
+              onChange={(e) => setNames({...names, name2: e.target.value})}
+              className="w-full px-2 py-1 bg-white/20 rounded border border-white/30 text-white placeholder-white/50"
+            />
+          </div>
+          <div>
+            <label className="block text-sm mb-1">Имя гостя:</label>
+            <input 
+              type="text" 
+              value={guestName}
+              onChange={(e) => setGuestName(e.target.value)}
+              className="w-full px-2 py-1 bg-white/20 rounded border border-white/30 text-white placeholder-white/50"
+            />
+          </div>
+        </div>
+      )}
       {/* Hero Section - First Screen */}
       <section 
         className="min-h-screen flex flex-col items-center justify-center relative bg-cover bg-center bg-no-repeat"
@@ -28,7 +108,7 @@ const Index = () => {
           {/* Names */}
           <div className="mb-4">
             <h2 className="text-4xl md:text-6xl font-great-vibes" style={{ color: '#F5F5DC' }}>
-              Авенир & Наталья
+              {names.name1} & {names.name2}
             </h2>
           </div>
           
@@ -69,14 +149,14 @@ const Index = () => {
           {/* А&Н */}
           <div className="mb-8">
             <h1 className="text-6xl md:text-8xl font-great-vibes" style={{ color: '#F5F5DC' }}>
-              А&Н
+              {names.name1.charAt(0)}&{names.name2.charAt(0)}
             </h1>
           </div>
           
           {/* Персональное обращение */}
           <div className="mb-6">
             <h2 className="text-3xl md:text-4xl font-great-vibes" style={{ color: '#F5F5DC' }}>
-              Дорогой Александр
+              {greeting} {displayName}
             </h2>
           </div>
           
