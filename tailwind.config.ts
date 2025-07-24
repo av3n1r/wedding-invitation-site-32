@@ -73,6 +73,7 @@ export default {
 				}
 			},
 			fontFamily: {
+				'alex-brush': ['Alex Brush', 'cursive'],
 				'great-vibes': ['Great Vibes', 'cursive'],
 				cormorant: ['Cormorant', 'serif'],
 				montserrat: ['Montserrat', 'sans-serif']

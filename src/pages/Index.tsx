@@ -51,33 +51,37 @@ const Index = () => {
 
       {/* Hero Section - First Screen */}
       <section 
-        className="min-h-screen flex flex-col items-center justify-center relative bg-cover bg-center bg-no-repeat"
+        className="min-h-screen flex flex-col relative bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/img/6e49ddaf-673e-4e20-8ac9-c21812bf0708.jpg)`
         }}
       >
-        <div className="relative z-10 text-center px-4">
+        {/* Top content - Text */}
+        <div className="relative z-10 text-center px-4 pt-16">
           {/* Date */}
           <div className="mb-8">
-            <h1 className="text-6xl md:text-8xl font-great-vibes" style={{ color: '#F5F5DC' }}>
+            <h1 className="text-6xl md:text-8xl font-alex-brush" style={{ color: '#F5F5DC' }}>
               20.09.2025
             </h1>
           </div>
           
           {/* Names */}
           <div className="mb-2">
-            <h2 className="text-4xl md:text-6xl font-great-vibes" style={{ color: '#F5F5DC' }}>
+            <h2 className="text-4xl md:text-6xl font-alex-brush" style={{ color: '#F5F5DC' }}>
               {names.name1} & {names.name2}
             </h2>
           </div>
           
           {/* Wedding text */}
-          <div className="mb-16">
-            <p className="text-xl md:text-2xl font-great-vibes tracking-widest" style={{ color: '#F5F5DC', opacity: 0.8 }}>
+          <div className="mb-8">
+            <p className="text-xl md:text-2xl font-alex-brush tracking-widest" style={{ color: '#F5F5DC', opacity: 0.8 }}>
               Wedding
             </p>
           </div>
+        </div>
 
+        {/* Bottom content - Ring and button */}
+        <div className="flex-1 flex flex-col items-center justify-end pb-16 relative z-10">
           {/* Diamond ring icon */}
           <div className="mb-8">
             <img 
@@ -113,28 +117,31 @@ const Index = () => {
         <div className="flex-1 flex flex-col justify-center items-center text-center relative z-10 pt-8">
           {/* А&Н */}
           <div className="mb-8">
-            <h1 className="text-6xl md:text-8xl font-great-vibes" style={{ color: '#F5F5DC' }}>
+            <h1 className="text-6xl md:text-8xl font-alex-brush" style={{ color: '#F5F5DC' }}>
               {names.name1.charAt(0)}&{names.name2.charAt(0)}
             </h1>
           </div>
           
           {/* Персональное обращение */}
           <div className="mb-6">
-            <h2 className="text-3xl md:text-4xl font-great-vibes" style={{ color: '#F5F5DC' }}>
-              {greeting} {displayName}
+            <h2 className="text-3xl md:text-4xl font-alex-brush" style={{ color: '#F5F5DC' }}>
+              {greeting}
+            </h2>
+            <h2 className="text-3xl md:text-4xl font-alex-brush" style={{ color: '#F5F5DC' }}>
+              {displayName}
             </h2>
           </div>
           
           {/* Основной текст приглашения */}
           <div className="mb-8 max-w-2xl">
-            <p className="text-lg md:text-xl font-montserrat leading-relaxed" style={{ color: '#F5F5DC' }}>
+            <p className="text-lg md:text-xl font-alex-brush leading-relaxed" style={{ color: '#F5F5DC' }}>
               Приглашаем отпраздновать вместе с нами счастливый день нашей свадьбы
             </p>
           </div>
 
           {/* Дата */}
           <div className="mb-8">
-            <h3 className="text-4xl md:text-5xl font-great-vibes" style={{ color: '#F5F5DC' }}>
+            <h3 className="text-4xl md:text-5xl font-alex-brush" style={{ color: '#F5F5DC' }}>
               20 | сентября | 2025
             </h3>
           </div>
@@ -154,7 +161,7 @@ const Index = () => {
 
           {/* Информация о месте */}
           <div className="mb-12 max-w-3xl">
-            <p className="text-base md:text-lg font-montserrat leading-relaxed text-center" style={{ color: '#F5F5DC' }}>
+            <p className="text-base md:text-lg font-alex-brush leading-relaxed text-center" style={{ color: '#F5F5DC' }}>
               Торжество будет проходить в ресторане "Атлант" по адресу г. Ленинск-Кузнецкий, пос. Демьяновка, ул. Кемеровская 22а.
             </p>
           </div>
@@ -174,7 +181,7 @@ const Index = () => {
                   opacity: 0.9
                 }}
               />
-              <p className="font-montserrat font-medium text-lg md:text-xl" style={{ color: '#F5F5DC' }}>
+              <p className="font-alex-brush font-medium text-lg md:text-xl" style={{ color: '#F5F5DC' }}>
                 15:30<br />сбор гостей
               </p>
             </div>
@@ -190,7 +197,7 @@ const Index = () => {
                   opacity: 0.9
                 }}
               />
-              <p className="font-montserrat font-medium text-lg md:text-xl" style={{ color: '#F5F5DC' }}>
+              <p className="font-alex-brush font-medium text-lg md:text-xl" style={{ color: '#F5F5DC' }}>
                 16:00<br />Праздничный банкет
               </p>
             </div>
@@ -199,7 +206,7 @@ const Index = () => {
 
         {/* Подвал */}
         <div className="relative z-10 text-center pb-6">
-          <p className="text-2xl font-great-vibes" style={{ color: '#F5F5DC' }}>
+          <p className="text-2xl font-alex-brush" style={{ color: '#F5F5DC' }}>
             До встречи!
           </p>
         </div>
