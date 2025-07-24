@@ -168,7 +168,7 @@ const Index = () => {
               <img 
                 src="https://cdn.poehali.dev/files/4792ad6e-c87e-4050-9efd-07aea9ef308c.png" 
                 alt="Гости"
-                className="h-16 md:h-20 w-auto flex-shrink-0"
+                className="h-16 md:h-20 w-16 md:w-20 flex-shrink-0"
                 style={{
                   filter: 'brightness(0) saturate(100%) invert(92%) sepia(10%) saturate(372%) hue-rotate(9deg) brightness(103%) contrast(96%)',
                   opacity: 0.9
@@ -184,7 +184,7 @@ const Index = () => {
               <img 
                 src="https://cdn.poehali.dev/files/1846b001-6a1d-4e98-80b8-817746876187.png" 
                 alt="Банкет"
-                className="h-16 md:h-20 w-auto flex-shrink-0"
+                className="h-16 md:h-20 w-16 md:w-20 flex-shrink-0"
                 style={{
                   filter: 'brightness(0) saturate(100%) invert(92%) sepia(10%) saturate(372%) hue-rotate(9deg) brightness(103%) contrast(96%)',
                   opacity: 0.9
