@@ -110,7 +110,7 @@ const Index = () => {
           backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/a9573cb9-aa9e-4204-9798-622d45274eb3.jpg)`
         }}
       >
-        <div className="flex-1 flex flex-col justify-center items-center text-center relative z-10">
+        <div className="flex-1 flex flex-col justify-center items-center text-center relative z-10 pt-16">
           {/* А&Н */}
           <div className="mb-8">
             <h1 className="text-6xl md:text-8xl font-great-vibes" style={{ color: '#F5F5DC' }}>
@@ -166,7 +166,7 @@ const Index = () => {
             {/* Сбор гостей */}
             <div className="flex items-center gap-4">
               <img 
-                src="https://cdn.poehali.dev/files/8bcbf6c2-1e1f-42a2-b3b3-c5714e5e9cbd.png" 
+                src="/img/f33b006d-67fd-4bf6-98b4-721f4bde34ed.jpg" 
                 alt="Гости"
                 className="h-16 md:h-20 w-auto flex-shrink-0"
                 style={{
