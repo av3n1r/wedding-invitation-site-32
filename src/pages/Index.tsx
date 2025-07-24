@@ -7,8 +7,7 @@ const Index = () => {
     name1: 'Авенир',
     name2: 'Наталья'
   });
-  const [guestName, setGuestName] = useState('Александр');
-  const [isEditing, setIsEditing] = useState(false);
+
 
   // URL параметры
   const [greeting, setGreeting] = useState('Дорогой');
@@ -49,47 +48,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen">
-      {/* Edit Button */}
-      <button 
-        onClick={() => setIsEditing(!isEditing)}
-        className="fixed top-4 right-4 z-50 bg-black/20 hover:bg-black/30 text-white px-4 py-2 rounded-full transition-all"
-        style={{ backdropFilter: 'blur(10px)' }}
-      >
-        {isEditing ? 'Сохранить' : 'Редактировать'}
-      </button>
 
-      {/* Edit Panel */}
-      {isEditing && (
-        <div className="fixed top-16 right-4 z-50 bg-black/80 text-white p-4 rounded-lg space-y-3" style={{ backdropFilter: 'blur(10px)' }}>
-          <div>
-            <label className="block text-sm mb-1">Имя жениха:</label>
-            <input 
-              type="text" 
-              value={names.name1}
-              onChange={(e) => setNames({...names, name1: e.target.value})}
-              className="w-full px-2 py-1 bg-white/20 rounded border border-white/30 text-white placeholder-white/50"
-            />
-          </div>
-          <div>
-            <label className="block text-sm mb-1">Имя невесты:</label>
-            <input 
-              type="text" 
-              value={names.name2}
-              onChange={(e) => setNames({...names, name2: e.target.value})}
-              className="w-full px-2 py-1 bg-white/20 rounded border border-white/30 text-white placeholder-white/50"
-            />
-          </div>
-          <div>
-            <label className="block text-sm mb-1">Имя гостя:</label>
-            <input 
-              type="text" 
-              value={guestName}
-              onChange={(e) => setGuestName(e.target.value)}
-              className="w-full px-2 py-1 bg-white/20 rounded border border-white/30 text-white placeholder-white/50"
-            />
-          </div>
-        </div>
-      )}
       {/* Hero Section - First Screen */}
       <section 
         className="min-h-screen flex flex-col items-center justify-center relative bg-cover bg-center bg-no-repeat"
@@ -106,7 +65,7 @@ const Index = () => {
           </div>
           
           {/* Names */}
-          <div className="mb-4">
+          <div className="mb-2">
             <h2 className="text-4xl md:text-6xl font-great-vibes" style={{ color: '#F5F5DC' }}>
               {names.name1} & {names.name2}
             </h2>
@@ -207,11 +166,11 @@ const Index = () => {
             {/* Сбор гостей */}
             <div className="flex items-center gap-4">
               <img 
-                src="/img/db4a3780-4502-410b-9a65-f28d8046194f.jpg" 
+                src="https://cdn.poehali.dev/files/8bcbf6c2-1e1f-42a2-b3b3-c5714e5e9cbd.png" 
                 alt="Гости"
                 className="h-16 md:h-20 w-auto flex-shrink-0"
                 style={{
-                  filter: 'invert(92%) sepia(10%) saturate(372%) hue-rotate(9deg) brightness(103%) contrast(96%)',
+                  filter: 'brightness(0) saturate(100%) invert(92%) sepia(10%) saturate(372%) hue-rotate(9deg) brightness(103%) contrast(96%)',
                   opacity: 0.9
                 }}
               />
