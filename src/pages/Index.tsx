@@ -37,7 +37,6 @@ const Index = () => {
       }
       
       setDisplayName(finalName);
-      setGuestName(finalName);
     }
   }, []);
   const scrollToInvitation = () => {
